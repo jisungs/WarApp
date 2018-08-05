@@ -30,10 +30,10 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eD6-MA-6q5" userLabel="Card Stack View">
                                         <rect key="frame" x="0.0" y="157" width="375" height="156.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="DXb-Xe-6aU">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="nov-rn-biI">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="156.5"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="nov-rn-biI">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="DXb-Xe-6aU">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="156.5"/>
                                             </imageView>
                                         </subviews>
@@ -41,6 +41,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zo-fY-atX">
                                         <rect key="frame" x="0.0" y="313.5" width="375" height="157"/>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBZ-XK-de6"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="935-IQ-20d">
                                         <rect key="frame" x="0.0" y="470.5" width="375" height="156.5"/>
@@ -98,6 +101,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="leftImageView" destination="nov-rn-biI" id="zcB-Ju-Pc4"/>
+                        <outlet property="leftScoreLabel" destination="LbX-48-D1C" id="Jo6-AK-qEz"/>
+                        <outlet property="rightImageView" destination="DXb-Xe-6aU" id="J49-wT-oSe"/>
+                        <outlet property="rightScoreLabel" destination="xU2-HL-rhW" id="BS0-1O-COp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
